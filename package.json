@@ -1,0 +1,37 @@
+{
+  "name": "hex-to-uint8",
+  "repository": "github:fabiospampinato/hex-to-uint8",
+  "description": "The fastest function to convert a hexadecimal string to a Uint8Array.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "test": "tsex test",
+    "test:watch": "tsex test --watch",
+    "prepublishOnly": "tsex prepare"
+  },
+  "keywords": [
+    "uint8",
+    "uint8array",
+    "buffer",
+    "hex",
+    "hexadecimal",
+    "conversion",
+    "convert"
+  ],
+  "dependencies": {
+    "hex-encoding": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "fast-check": "^3.12.0",
+    "fava": "^0.2.1",
+    "tsex": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
