@@ -10,8 +10,6 @@ import toUint8 from '../dist/index.js';
 
 describe ( 'Hex To Uint8', it => {
 
-  const encoder = new TextEncoder ();
-
   it ( 'works with fc-generated strings', t => {
 
     const assert = str => t.is ( toUint8 ( Buffer.from ( str ).toString ( 'hex' ) ).join ( ',' ), Buffer.from ( Buffer.from ( str ).toString ( 'hex' ), 'hex' ).join ( ',' ) );
